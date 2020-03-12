@@ -3,7 +3,7 @@ require_relative 'lib/noname/version'
 Gem::Specification.new do |spec|
   spec.name          = "noname"
   spec.version       = Noname::VERSION
-  spec.authors       = ["CoderAcademy-MEL"]
+  spec.authors       = ["Guan Kuan Lee"]
   spec.email         = ["angusl.zanshin@gmail.com"]
 
   spec.summary       = "something"
@@ -12,11 +12,11 @@ Gem::Specification.new do |spec|
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
-  spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
+  # spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
 
-  spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "TODO: Put your gem's public repo URL here."
-  spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
+  # spec.metadata["homepage_uri"] = spec.homepage
+  # spec.metadata["source_code_uri"] = "TODO: Put your gem's public repo URL here."
+  # spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
@@ -29,7 +29,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency "colorize", "~> 0.8.1"
 end
 
-
 #this will be shown on gem page
 
 # to update gem in github
@@ -39,3 +38,14 @@ end
 # git remote add origin <URL>
 # git remote -v
 # git push -u origin master
+
+# curl -u <gkuanlee16> https://rubygems.org/api/v1/api_key.yaml > ~/.gem/credentials; chmod 0600 ~/.gem/credentials
+# gem signin
+
+# building a gem 
+# gem build noname.gemspec
+
+# udpating the gem
+# rake build --> another version of gem will be created --> move the version file to "pkg"
+# pushing the update
+# gem push pkg/noname-version.gem

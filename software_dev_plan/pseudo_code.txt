@@ -1,0 +1,218 @@
+Prior to code
+- users are required to install the gems required to run the program
+- once installed, ruby run program
+
+including a simple card visual using lines and asterisks
+
+First interaction 
+
+# USE CASE STATEMENT FOR ALL OPTIONS RELATED PROBLEMS, INTEGERS FOR OPTIONS
+# IF/ELSE FOR CONFIRMATION OF ACTIONS **
+
+1. Menu (OPTIONS ARE REPRESENTED BY INTEGERS)
+- Decks
+- Learning Mode --> Current Progress
+
+the above items are list as "integers" for users to select. Once selected, will move into the folder. 
+
+2. Deck - deck's data type is an array consisting of hashes which would be the cards (ARRAY)
+
+# USE CASE STATEMENT
+
+- View current Decks - will show all decks and also allow option 2, 3 and 4 to be actioned here
+- Edit current Decks - will ask what users would like to update (name) 
+- delete Deck **
+- go back to first Menu
+
+3. card (under deck) - this will show all the cards in hashes
+- view card 
+- edit card 
+- delete card **
+- go back to decks
+
+# LOGIC
+
+Classes
+  Parent = Deck
+    - allow deck to be initialized (parameters include "name")
+    - remember to implement attr_accessor/etc whenever applicable
+    - instance variables 
+        - deck name y
+        - count_deck?? maybe only in class var y
+        - count_cards = 0 y
+        - count_tests = 0 y
+        - familiarity rate = 0 y
+    - class variables
+        - count deck = 0 y
+        - familiarity rate (should be different for each deck created) y
+    - methods 
+      - count deck (self) (class?) y
+      - update deck y
+      - create deck y
+      - view deck y
+      - delete deck y
+      - LEARNING MODE - class method to calculate if deck familiarity is under "recap" (familiar) or under "unfamiliar" 
+      - random generator for questions - REVISIT LAST
+      - get familiarity rate y 
+      - get date created y
+      - get date modified y
+      - back to main menu y
+
+  Child = Card
+    - allow card to be initialized (parameters = "card name", "description")
+    - remember to implement attr_accessor/etc whenever applicable
+    - instance variables
+      - card name y
+      - description y
+    
+    - methods 
+      - add card
+      - update card
+      - view card
+      - delete card
+      - back to deck menu
+
+card = array.find { |card| card[:name] == incoming_card_name }
+if card
+  puts "Duplicate detected"
+else 
+  # add to array
+end
+
+Menu 
+  1. Decks
+  2. Learning Mode >> Current Progress
+
+users select from {case statement} 
+  1. View Deck
+  2. Create Deck
+  3. Update Deck
+  4. Delete Deck
+  5. Go back to menu
+
+  note: show decks and cards in visual form (if possible)
+
+  >> Login (not mandatory)
+  
+
+  >> Decks
+
+    >> to process selected deck 
+
+      >> program will asks user to enter the correct name of a deck until the name req is satisfied
+      >>  LOOP  { if "deck name" > deck, else print "deck does not exist, please check name" (write a better error handling message) } LOOP
+
+      >> if successful, then show deck
+
+        >> data to show includes:
+          - name of the deck
+          - familiarity rate 
+          - topic
+          - number of cards
+          - number of completed practices
+          - number of mastered cards
+          - number of unmastered cards
+          - date modified (not mandatory)
+          - date created (not mandatory)
+          
+        >> show all cards (below deck)
+            >> present one card per line (HASH)
+        
+    >> create a deck
+      >> LOOP ask for user input "what name youd like for new deck?" LOOP
+       {if "deck name" already exist in your collection, choose another name"} - REVISIT
+
+    >> update a deck
+      >> program will asks user to enter the correct name of a deck until the name req is satisfied
+      >>  LOOP  { if "deck name" > deck, else print "deck does not exist, please check name" (write a better error handling message) } LOOP
+
+  >> Cards 
+    present users with a menu (case statement)
+      1. view card 
+      2. create card
+      3. edit card
+      4. delete card
+      5. go back to deck
+
+    >> 1 selected
+      LOOP { if "card name" , else print "card does not exist within this deck, please check name" (write a better error handling message) } LOOP
+      >> card details
+        - card name
+        - card description
+
+      >> menu 
+        1. edit
+        2. delete
+        3. go back
+    
+    >> 2 
+      >> LOOP user input "What would you like to name your card?" LOOP {if "card name" already exist within this deck, choose another name"}
+      >> "description of the card?"
+      >> succeed - "card created"
+      >> pause and go back to previous menu
+    
+    >> 3
+      >> LOOP "which card would you like to update?" LOOP 
+      { if "card name" , else print "card does not exist within this deck, please check name"
+
+      >> current card details:
+        - card name
+        - card description
+
+      >> "what would you like to change? 
+      
+        1. name
+        2. description
+      
+      >> case statement "what would be the new name/description?"
+        {if "card name" already exist within this deck, choose another name"}
+
+      >> if new card name == name > error 'same name' or duplicate in the deck >> PROBLEM
+        >> else, succeed - "name/description changed"
+
+      >> pause and go back to previous menu
+
+   >> 4
+    >> list of cards (hashes)
+      >> "which card would you like to delete? 
+        >> confirmation > do you really want to delete {card}? 
+          Yes/No
+      >> succeed - "card deleted"
+
+  >> 5 
+    >> go back to previous menu (deck)
+
+  
+
+>> Learning Mode 
+
+"Cards are randomly shuffled" 
+
+  >> options in case statement:
+    1. Recap
+    2. Unfamiliar decks
+    3. New decks
+    
+  >> 1
+    >> familiarity threshold == 100%? - set in class?
+    >> show decks that == threshold
+    >> Q & A: 
+      >> get from 100% familiarity deck, if no deck found, use default.
+      >> answers --> generated by random generator using data from within the deck
+      >> BONUS --> generate answers which are similar to each other
+  >> 2
+    >> familiarity threshold < 100%? 
+    >> Q & A:
+      >> from unfamiliar Decks
+      >> answers --> generated by random generator using data from within the deck
+      >> BONUS --> generate answers which are similar to each other
+
+  >> 3 
+    >> show new decks (recently created)
+    >> define recent --> within the last 30 days? set in class?
+
+  
+  >> Current Progress
+    >> shows progress for all decks
+      >> in hash, with percentage 
+      >> BONUS - show comforting/inspiring messages in deck (if applicable)
