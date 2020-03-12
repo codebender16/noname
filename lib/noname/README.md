@@ -26,7 +26,7 @@ The concept is simple.
 From my learning experience and my observation with how humans learn, we humans learn and retain better through continuous repetition. As quoted from Tony Robbins,
 
 > Repetitions is a mother of skill
-> - Tony Robbins
+> -Tony Robbins
 
 **"Many students find it difficult to memorise information even though the information has been processed and understood. More often than not, subject contents delivered in a traditional method, do not provide students with the time and reinforcement tool to excel in mastering those content."**
 
