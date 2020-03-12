@@ -1,10 +1,14 @@
 # STURDY CARDS
 
+
 ## Contents
 
-[About](###-About)
+[About](##-About)
+  [Research](###-Research-and-Problem-statement)
 
-### About
+
+## About
+
 
 Sturdy cards is flash cards with spaced repetition learning feature. It is created for anyone who wants to reinforce their learning through spaced repetition.
 
@@ -34,26 +38,27 @@ From my learning experience and my observation with how humans learn, we humans 
 
 With Sturdy Cards, you can be rest assured your learning will be taken care of. By using spaced repetition and several distinctive modes available to choose from, we can help you learn and retain information more effectively. For those who are already at an advanced level in a subject, your subject expertise can be further reinforced. 
 
-### Features
+## Features
 
 |   Features    |              Functions                                 |        Released Date                     |
-|:-----------------: | :--------------------------------------------------------: | :---------------------------------: |
+|:----------------- | :--------------------------------------------------------: | :---------------------------------: |
 |1. Decks | Allows deck viewing, creation, updating and deletion | 14-March-2020 |
 |2. Cards | Allows card viewing, creation, updating and deletion |         14-March-2020 |
 |3. Learning Mode | Users are given a few different modes to learn |         14-March-2020 - Present |
 
+### Next steps
 
+1. More learning modes - TBA
+2. Learning Progress - implement a tracking feature every time the users attempt the learning mode
+3. Export/Import of csv files as decks and cards
+4. Notifications - daily question auto-prompt
+5. Community and Friends - allow information to be published publicly in the app and follow friends
+6. Ranking system
+7. Competitions
 
-Develop a list of features that will be included in the application. It must include:
-- at least THREE features
-- describe each feature
+## Tutorial
 
-Note: Ensure that your features above allow you to demonstrate your understanding of the following language elements and concepts:
-- use of variables and the concept of variable scope
-- loops and conditional control structures
-- error handling
-
-### 
+### Installation
 
 	Develop an outline of the user interaction and experience for the application.
 Your outline must include:
