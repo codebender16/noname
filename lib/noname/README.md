@@ -36,11 +36,11 @@ With Sturdy Cards, you can be rest assured your learning will be taken care of. 
 
 ### Features
 
-     Features    |              Functions                                 |        Released Date
------------------ | -------------------------------------------------------- | ---------------------------------
-1. Decks | Allows deck viewing, creation, updating and deletion | 14-March-2020
-2. Cards | Allows card viewing, creation, updating and deletion |         14-March-2020
-3. Learning Mode | Users are given a few different modes to learn         |         14-March-2020 - Present
+|   Features    |              Functions                                 |        Released Date |
+----------------- | :--------------------------------------------------------: | ---------------------------------: |
+|1. Decks | Allows deck viewing, creation, updating and deletion | 14-March-2020 |
+|2. Cards | Allows card viewing, creation, updating and deletion |         14-March-2020 |
+|3. Learning Mode | Users are given a few different modes to learn |         14-March-2020 - Present |
 
 
 
