@@ -1,9 +1,6 @@
 # STURDY CARDS
 
 ## Contents
-  [create an anchor](### About)
-
-
 
 ### About
 
@@ -17,8 +14,12 @@ The concept is simple.
 4. Once you are all set up, you can start learning. There are a few different modes available for you so you will never get bored of being tested by the same method throughout the process.
 5. Lastly, sit back and be sturdy. Your knowledge will only ever going to get sturdier.
 
+
+
 * There is a tutorial section below if you need further instructions on how to use the application.
 * Feel free to read through the feature section to understand how our feature works.
+
+
 
 #### Research and Problem statement 
 
@@ -32,6 +33,13 @@ From my learning experience and my observation with how humans learn, we humans 
 With Sturdy Cards, you can be rest assured your learning will be taken care of. By using spaced repetition and several distinctive modes available to choose from, we can help you learn and retain information more effectively. For those who are already at an advanced level in a subject, your subject expertise can be further reinforced. 
 
 ### Features
+
+     Features    |              Functions                                 |        Released Date
+-----------------|--------------------------------------------------------|---------------------------------
+1. Decks         | Allows deck viewing, creation, updating and deletion   |         14-March-2020
+2. Cards         | Allows card viewing, creation, updating and deletion   |         14-March-2020
+3. Learning Mode | Users are given a few different modes to learn         |         14-March-2020 - Present
+
 
 
 Develop a list of features that will be included in the application. It must include:
