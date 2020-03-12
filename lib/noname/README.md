@@ -2,6 +2,8 @@
 
 ## Contents
 
+[About](###-About)
+
 ### About
 
 Sturdy cards is flash cards with spaced repetition learning feature. It is created for anyone who wants to reinforce their learning through spaced repetition.
@@ -26,7 +28,7 @@ The concept is simple.
 From my learning experience and my observation with how humans learn, we humans learn and retain better through continuous repetition. As quoted from Tony Robbins,
 
 > Repetitions is a mother of skill
-> -Tony Robbins
+> - Tony Robbins
 
 **"Many students find it difficult to memorise information even though the information has been processed and understood. More often than not, subject contents delivered in a traditional method, do not provide students with the time and reinforcement tool to excel in mastering those content."**
 
@@ -35,9 +37,9 @@ With Sturdy Cards, you can be rest assured your learning will be taken care of. 
 ### Features
 
      Features    |              Functions                                 |        Released Date
------------------|--------------------------------------------------------|---------------------------------
-1. Decks         | Allows deck viewing, creation, updating and deletion   |         14-March-2020
-2. Cards         | Allows card viewing, creation, updating and deletion   |         14-March-2020
+----------------- | -------------------------------------------------------- | ---------------------------------
+1. Decks | Allows deck viewing, creation, updating and deletion | 14-March-2020
+2. Cards | Allows card viewing, creation, updating and deletion |         14-March-2020
 3. Learning Mode | Users are given a few different modes to learn         |         14-March-2020 - Present
 
 
