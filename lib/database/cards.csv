@@ -1,2 +1,19 @@
 card id,deck,card name,description
-1,trying,try harder,soldier through
+1,trying,try harder,soldier through1,
+2,ruby arrays,"[a, b, c] + [d, e]","= [a, b, c, d, e]"
+3,ruby arrays,creating an array ,"array.new, arr = []"
+4,ruby arrays,accessing elements, arr[index], arr.at(index)
+5,ruby arrays,access first element, arr.first
+6,ruby arrays,access last element, arr.last
+7,ruby arrays,arr.drop(n), return elements after n
+8,ruby arrays,arr.length, counts number of elements in an array
+9,ruby arrays,arr.include?, return TRUE if exist in an array
+10,ruby arrays,arr.unshift, add new item to beginning
+11,ruby arrays,arr.shift, retrieve and remove first element
+12,ruby arrays,arr.pop, remove last element
+13,ruby arrays,interating over an array, arr.each do |item|
+14,ruby arrays,Array.new(4) {Hash.new}, => [{}, {}, {}, {}]
+15,ruby arrays,what is slicing?, return a specified range of elements
+16,ruby arrays,arr.empty?, return FALSE is it is not empty
+17,ruby arrays,remove nil?, arr.compact
+18,ruby arrays, arr.uniq, remove duplicate elements from an array

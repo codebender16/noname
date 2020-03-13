@@ -1,10 +1,14 @@
 # STURDY CARDS
 
-
-## Contents
-
-[About](##-About)
-  [Research](###-Research-and-Problem-statement)
+- [STURDY CARDS](#sturdy-cards)
+  - [About](#about)
+      - [Research and Problem statement](#research-and-problem-statement)
+  - [Features](#features)
+  - [Next Steps](#next-steps)
+  - [Tutorial](#tutorial)
+  - [UML Diagram](#uml-diagram)
+  - [Project Timeline](#project-timeline)
+  - [Github](#github)
 
 
 ## About
@@ -22,8 +26,8 @@ The concept is simple.
 
 
 
-* There is a tutorial section below if you need further instructions on how to use the application.
-* Feel free to read through the feature section to understand how our feature works.
+* There is a [tutorial](##Tutorial) section below if you need further instructions on how to use the application.
+* Feel free to read through the [feature section](##Features) to understand how our feature works.
 
 
 
@@ -46,7 +50,7 @@ With Sturdy Cards, you can be rest assured your learning will be taken care of. 
 |2. Cards | Allows card viewing, creation, updating and deletion |         14-March-2020 |
 |3. Learning Mode | Users are given a few different modes to learn |         14-March-2020 - Present |
 
-### Next steps
+## Next Steps
 
 1. More learning modes - TBA
 2. Learning Progress - implement a tracking feature every time the users attempt the learning mode
@@ -58,33 +62,39 @@ With Sturdy Cards, you can be rest assured your learning will be taken care of. 
 
 ## Tutorial
 
-### Installation
+The app runs on terminal command-line. 
 
-	Develop an outline of the user interaction and experience for the application.
-Your outline must include:
-- how the user will find out how to interact with / use each feature
-- how the user will interact with / use each feature
-- how errors will be handled by the application and displayed to the user
+CSV files are used to keep the data created/altered from the command-line.
 
+Notes:
+  * Most deck search functionality uses id unless stated otherwise by the program. 
+  * Card search functionality uses card_name
+  * Errors like duplicates, names and non-existent data are captured
 
-# UML diagram
-Develop a diagram which describes the control flow of your application. Your diagram must:
-- show the workflow/logic and/or integration of the features in your application for each feature.
-- utilise a recognised format or set of conventions for a control flow diagram, such as UML.
-
-
-# trello
-Develop an implementation plan which:
-- outlines how each feature will be implemented and a checklist of tasks for each feature
-- prioritise the implementation of different features, or checklist items within a feature
-- provide a deadline, duration or other time indicator for each feature or checklist/checklist-item
-
-Utilise a suitable project management platform to track this implementation plan
-
-> Your checklists for each feature should have at least 5 items.
+The first menu you will encounter is the *Main Menu*
+* Select one of the options (select 1 as Learning Mode is in progress)
+* The next stop is *Deck Menu*. 
+  * Select one of the options (View, Create, Update and etc) 
+  *  In View Deck, you will be asked to select a deck id. (The program will catch the error if id does not exist and asks for your input again)
+  *  In Create Deck, you will be asked *name* and *topic* of the deck you want to create (If name already exists, you will need to enter another name)
+  *  In Update Deck, the information presented is the same as View Deck. Once a deck is selected for update, it will update the csv file.
+  *  In Delete Deck, select a deck to be removed (csv will update). If deck does not exist, it will prompt you to enter a valid id.
 
 
-Design help documentation which includes a set of instructions which accurately describe how to use and install the application.
+## UML Diagram 
+
+![UML Diagram](./Desktop/../../../resources/UML&#32;Sturdy&#32;Cards.png)
+
+
+## Project Timeline 
+
+[Sturdy Cards - Trello](https://trello.com/b/crD1QQab/sturdycards-terminal-app)
+
+## Github 
+
+[codebender16-git-hub](https://github.com/codebender16/noname)
+
+How to install
 
 You must include:
 - steps to install the application

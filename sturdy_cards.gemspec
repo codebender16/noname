@@ -1,7 +1,7 @@
 require_relative 'lib/noname/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "noname"
+  spec.name          = "Flash Cards - Sturdy Cards App"
   spec.version       = Noname::VERSION
   spec.authors       = ["Guan Kuan Lee"]
   spec.email         = ["angusl.zanshin@gmail.com"]
@@ -27,6 +27,7 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
   spec.add_dependency "colorize", "~> 0.8.1"
+  spec.add_dependency "tty-font', '~> 0.5.0"
 end
 
 #this will be shown on gem page

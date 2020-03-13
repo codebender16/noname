@@ -4,7 +4,7 @@
 class Deck
 
   attr_reader :familiarity_rate, :test_counts, :id, :date_created
-  attr_accessor :date_modified, :topic, :deck_name
+  attr_accessor :date_modified, :topic, :deck_name, :card_counts
 
   @@deck_counts = 0
 
@@ -20,9 +20,9 @@ class Deck
     @topic = topic
   end
 
-  def calculate_familiarity_rate # divide {familiar_card_counts} by {card_counts}
-    @familiarity_rate = familiar_card_counts / card_counts
-  end
+  # def calculate_familiarity_rate # divide {familiar_card_counts} by {card_counts}
+  #   @familiarity_rate = familiar_card_counts / card_counts
+  # end
 
   def to_a
     [@id, @deck_name, @topic]
