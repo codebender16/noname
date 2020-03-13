@@ -1,7 +1,7 @@
 require_relative 'lib/noname/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "Flash Cards - Sturdy Cards App"
+  spec.name          = "Flash_Cards_Sturdy_Cards_App"
   spec.version       = Noname::VERSION
   spec.authors       = ["Guan Kuan Lee"]
   spec.email         = ["angusl.zanshin@gmail.com"]
